@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    message: "分类页面"
+    message: "分类页面",
+    isLoading: true
   },
 
   /**

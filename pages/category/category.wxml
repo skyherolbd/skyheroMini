@@ -1,3 +1,28 @@
 <!--pages/category/category.wxml-->
-<!-- <text>pages/category/category.wxml</text> -->
-<view>{{message}}</view>
+<!-- 1、文本可选择和复制 -->
+<text selectable>{{message}}\n</text>
+<!-- 2、决定文本空格的大小 -->
+<text space='nbsp'>商品 一\n</text>
+<text space='ensp'>商品 一\n</text>
+<text space='emsp'>商品 一\n</text>
+<!-- 3、是否解码文本 -->
+<text decode>5 &gt; 3\n</text>
+<!-- button加载样式、默认样式、正常样式、警告样式、透明样式、禁用、被点击样式 -->
+<button size='mini' loading='{{isLoading}}'>加载</button>
+<button size='mini' type='default'>默认</button>
+<button size='mini' type='primary'>正常</button>
+<button size='mini' type='warn'>警告</button>
+<button size='mini' plain>楼空</button>
+<button size='mini' disable='{{true}}'>禁用</button>
+<button size='mini' hover-class='pressed'>按钮点击背景色</button>
+<!-- view样式、被点击后样式、被点击样式改变时长、被点击样式停留时长、被点击子view不牵涉父view -->
+<view class='box1' hover-class='box1-hover'>
+  <view 
+    class='view-custom' 
+    hover-class='view-hover' 
+    hover-start-time='50' 
+    hover-stay-time='50'
+    hover-stop-propagation>
+    view容器1
+  </view>
+</view>

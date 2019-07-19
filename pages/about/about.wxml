@@ -1,2 +1,10 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<scroll-view class='container1' scroll-x scroll-y bindscroll='handleScroll' upper-threshold='10' bindscrolltoupper='handleScrollUpper' lower-threshold='10' bindscrolltolower='handleScrollLower'>
+  <!-- 图片本地访问、远程访问、加载触发、上中下三屏后懒加载、长按弹出识别小程序码 -->
+  <image wx:for='{{1}}' src='{{imagePath}}' bindload='loadedImage' lazy-load show-menu-by-longpress></image>
+  <!-- <image src='/assets/images/14224.jpg'></image> -->
+  <button type='primary' bindtap='uploadPicBtn'>上传图片</button>
+</scroll-view>
+<!-- 输入框键盘类型type(文本、数字、身份证、带小数点数字键盘) -->
+<input value='' type='text' password placeholder='请输入' 
+bindfocus='handleFocus' bindinput='handleInput' bindblur='handleBlur'/>

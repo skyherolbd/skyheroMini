@@ -1,1 +1,11 @@
 /* pages/about/about.wxss */
+input{
+  border: 1px solid black;
+  margin: 10px 30px;
+  white-space: nowrap;
+}
+
+.container1{
+  width: 220px;
+  height: 200px;
+}

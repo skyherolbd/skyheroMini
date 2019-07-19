@@ -1,6 +1,6 @@
 <!--pages/home/home.wxml-->
 <!-- 小程序的数据绑定：{{}}=Mustache语法 -->
-<text class='title' bindtap='outNameBtn'>Hello {{name}}</text>
+<text class='title' bindtap='outNameBtn' selectable='{{true}}'>Hello {{name}}\n</text>
 <!-- 2、获取用户信息 -->
 <button size='mini' open-type='getUserInfo' bindgetuserinfo='getUserInfo'>获取用户信息</button>
 <!-- 3、展示用户信息 -->

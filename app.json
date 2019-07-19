@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/about/about",
     "pages/home/home",
     "pages/category/category",
-    "pages/profile/profile",
-    "pages/about/about"
+    "pages/profile/profile"
   ],
   "sitemapLocation": "sitemap.json",
   "window": {
